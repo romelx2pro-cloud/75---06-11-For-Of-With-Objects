@@ -45,3 +45,15 @@ for (let m of Object.keys(movieReviews)) {
 for (let r of Object.values(movieReviews)) {
   console.log(`mr ${r}`);
 }
+const an = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+for (const key in an) {
+  console.log(key);
+  // if (!Object.hasOwn(an, key)) continue;
+
+  // const element = an[key];
+  console.log(an[key]);
+}
